@@ -28,5 +28,5 @@ git submodule add https://github.com/zsh-users/zsh-syntax-highlighting.git $ZDOT
 
 cat - ccat  
 copy - xclip (linux)  
-direnv - direnv
+direnv - direnv  
 java-v: java 8 & 11 - brew update & brew tap homebrew/cask-versions & brew cask install java  
