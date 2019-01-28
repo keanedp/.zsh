@@ -31,13 +31,6 @@ alias gusm='git submodule update --recursive --remote'
 #default to java 11 - from java-v custom plugin
 java11
 
-# # source any local configuration that is untracked by git
-# rcfiles=$(ls -A1 $ZDOTDIR/.zshrc_local/*.sh) >/dev/null 2>/dev/null
-# if [ ${#rcfiles[@]} -gt 0 ]; then
-#     #echo "processing files: $rcfiles"
-#     for f in $rcfiles; do echo $f; done
-# fi
-
 for f in $ZDOTDIR/.zshrc_local/*.sh; do
     . $f
 done 2> /dev/null
