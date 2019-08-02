@@ -28,9 +28,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias gusm='git submodule update --recursive --remote'
 
-#default to java 11 - from java-v custom plugin
-java11
+#default to java 8 - from java-v custom plugin
+java8
 
 for f in $ZDOTDIR/.zshrc_local/*.sh; do
     . $f
 done 2> /dev/null
+
