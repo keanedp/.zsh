@@ -27,6 +27,12 @@ source $ZSH/oh-my-zsh.sh
 # end oh-my-zsh config #
 ########################
 
+# set color to always so that output will not include color control characters when redirecting or piping
+export GREP_OPTIONS='--color=auto' 
+
+# keep history between iex sessions
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 alias gism='git submodule update --init --recursive'
 alias gusm='git submodule update --recursive --remote'
 
